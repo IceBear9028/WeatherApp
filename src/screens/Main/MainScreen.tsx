@@ -1,11 +1,11 @@
-import {Text, View} from 'react-native';
-import {style} from '@screens/Main/style.ts';
+import {Text} from 'react-native';
+import {ScreenLayout} from '@components/atom/commons/ScreenLayout.tsx';
 
 const MainScreen = () => {
   return (
-    <View style={style.container}>
+    <ScreenLayout>
       <Text>MainScreen</Text>
-    </View>
+    </ScreenLayout>
   );
 };
 

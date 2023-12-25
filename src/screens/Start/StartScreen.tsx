@@ -1,11 +1,10 @@
 import {Button, Image, Text, View} from 'react-native';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useInitialStartAppPath} from '~/hooks/commonHooks.ts';
 import {MAIN_PATH} from '@screens/screenPath.ts';
 import {style} from './style.ts';
+import {ScreenLayout} from '@components/atom/commons/ScreenLayout.tsx';
 
 const StartScreen = ({navigation}: any) => {
-  const insets = useSafeAreaInsets();
   const {startApp} = useInitialStartAppPath();
 
   function buttonEvent() {
@@ -13,14 +12,7 @@ const StartScreen = ({navigation}: any) => {
     navigation.navigate(MAIN_PATH);
   }
   return (
-    <View
-      style={{
-        ...style.container,
-        paddingTop: insets.top,
-        paddingBottom: insets.bottom,
-        paddingLeft: insets.left,
-        paddingRight: insets.right,
-      }}>
+    <ScreenLayout style={style.container}>
       <Image
         style={style.mainImg}
         source={require('@assets/image/MainWeatherImg.png')}
@@ -31,7 +23,7 @@ const StartScreen = ({navigation}: any) => {
       <View style={style.buttonContainer}>
         <Button title={'Get Start'} onPress={buttonEvent} />
       </View>
-    </View>
+    </ScreenLayout>
   );
 };
 
