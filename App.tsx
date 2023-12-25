@@ -3,7 +3,7 @@ import {RecoilRoot} from 'recoil';
 import {MAIN_PATH, START_PATH} from '@screens/screenPath.ts';
 import {NavigationContainer} from '@react-navigation/native';
 import {useInitialStartAppPath} from '~/hooks/commonHooks.ts';
-import {createNativeStackNavigator} from 'react-native-screens/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import MainScreen from '@screens/Main/MainScreen.tsx';
 import StartScreen from '@screens/Start/StartScreen.tsx';
 
