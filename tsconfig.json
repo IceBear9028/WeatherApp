@@ -8,7 +8,8 @@
       "@screens/*": ["screens/*"],
       "@assets/*": ["assets/*"],
       "@hooks/*": ["hooks/*"],
-      "@recoil/*": ["recoil/*"]
+      "@recoil/*": ["recoil/*"],
+      "@fetch/*" : ["recoil/*"]
     },
   }
 }

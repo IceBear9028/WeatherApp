@@ -23,6 +23,7 @@ module.exports = {
           '@assets': './src/assets',
           '@recoil': './src/recoil',
           '@hooks': './src/hooks',
+          '@fetch': './src/fetch',
         },
       },
     ],
